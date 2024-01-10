@@ -5,6 +5,13 @@ const {getContact,createContact,updateContact,deleteContact}=require('../control
 // const {updateContact}=require('../controllers/contactControllers')
 // const {deleteContact}=require('../controllers/contactControllers')
 
+
+//router middleware
+// router.use((req,res,next)=>{
+//     console.log("request received inside the contactrouter")
+// })
+    
+
 router.route('/').get(
     getContact
 ).post(
